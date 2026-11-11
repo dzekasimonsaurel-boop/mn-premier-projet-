@@ -1,0 +1,121 @@
+
+<style>
+  :root {
+    --bg: #f4f4f1;
+    --card: #ffffff;
+    --text: #1f2430;
+    --muted: #6a7080;
+    --accent: #2f6fed;
+    --line: #e3e5ea;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161b; --card: #1d2027; --text: #eceef3;
+      --muted: #9aa1b2; --accent: #6b9bff; --line: #2c303a;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161b; --card: #1d2027; --text: #eceef3;
+    --muted: #9aa1b2; --accent: #6b9bff; --line: #2c303a;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .icv {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card);
+    padding: 28px 22px;
+  }
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 16px; margin-bottom: 8px; }
+  h1 { margin: 0; font-size: 2rem; }
+  .job { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin: 2px 0 10px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--muted); font-size: .92rem; }
+  section { margin-top: 22px; }
+  h2 {
+    font-size: 1rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--accent); border-bottom: 1px solid var(--line);
+    padding-bottom: 4px; margin: 0 0 10px;
+  }
+  .item { margin-bottom: 14px; }
+  .item h3 { margin: 0; font-size: 1rem; }
+  .meta { color: var(--muted); font-size: .88rem; }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+  .skills li {
+    background: var(--bg); border: 1px solid var(--line);
+    padding: 3px 12px; border-radius: 999px; font-size: .9rem;
+  }
+  @media print {
+    body { background: #fff; }
+    .cv { padding: 0; }
+  }
+</style>
+</head>
+<body>
+<main class="cv">
+
+  <header>
+    <h1>Dzeka Saurel Simon</h1>
+    <p class="job">Web junior · Étudiant en génie logiciel</p>
+    <div class="contact">
+      <span>📍 Djiri Pont</span>
+      <span>📞 068451431</span>
+      <span>✉️ Saureldzeka@mail.com</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profil</h2>
+    <p>Étudiant en deuxième année de génie logiciel, passionné par le développement web (HTML, CSS, JavaScript). J’ai aussi des compétences en réparation et j’apprends l’électricité. Je cherche à mettre mes compétences en pratique à travers des projets et des stages.</p>
+  </section>
+
+  <section>
+    <h2>Projets</h2>
+    <div class="item">
+      <h3>Jeu du serpent</h3>
+      <div class="meta">HTML · CSS · JavaScript</div>
+      <ul>
+        <li>Jeu du serpent (snake) développé avec HTML, CSS et JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formation</h2>
+    <div class="item">
+      <h3>Génie logiciel – IMB</h3>
+      <div class="meta">2ᵉ année · Djiri Pont</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Compétences</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Réparation</li>
+      <li>Électricité (en apprentissage)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Langues</h2>
+    <p>Lingala · Français · Anglais (débutant)</p>
+  </section>
+
+</main>
+</body>
+</html>
